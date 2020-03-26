@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Buscador GIF</title>
+  </head>
+  <body>
+    <div class="row mt-4 mb-4 mr-3 ml-3">
+      <div class="col-12 col-sm-12 col-md-10 col-lg-9 col-xl-10">
+        <div class="input-group input-group-lg">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Buscador...</span>
+          </div>
+          <input type="text" id="palabra_gif" class="form-control">
+          <select id="numero_gif">
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-2 col-lg-3 col-xl-2 mt-4 mt-sm-4 mt-md-0">
+        <button type="button" onclick="mostrar_gif()" class="btn btn-success btn-block btn-lg">Mostrar</button>
+      </div>
+    </div>
+    <div class="row mt-4 mb-4 mr-3 ml-3" id="resultados">
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
